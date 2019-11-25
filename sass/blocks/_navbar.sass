@@ -1,0 +1,135 @@
+.navbar
+    max-height: 75px
+    display: flex
+    align-items: center
+    position: relative
+    &__logo
+        animation: slide-rotate-hor-top .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both
+        transition: .3s ease-out
+        @media screen and (max-width: 1024px)
+            padding-left: 20px
+        @media screen and (max-width: 414px)
+            margin-left: 110px
+        @media screen and (max-width: 375px)
+            margin-left: 80px
+        @media screen and (max-width: 360px)
+            margin-left: 55px
+
+            
+    &__list
+        margin-left: 100px
+        @media screen and (max-width: 1024px)
+            margin-left: 50px
+        @media screen and (max-width: 945px)
+            margin-left: 20px
+    &__list-ul_none img
+        @media screen and (max-width: 768px)
+            padding-right: 10px
+    &__list-ul
+        display: flex
+        justify-content: space-between
+        min-width: 475px
+        list-style: none
+        letter-spacing: .5px
+        @media screen and (max-width: 768px)
+            min-width: 400px
+        @media screen and (min-width: 1824px)
+            min-width: 580px
+    &__list-ul a
+        text-decoration: none
+        color: #96a6a7
+        text-transform: uppercase
+        font-size: 13px
+        font-weight: 500
+        transition: .3s ease-in-out
+        @media screen and (min-width: 1824px)
+            font-size: 15px
+        @media screen and (max-width: 945px)
+            font-size: 12px
+        @media screen and (max-width: 768px)
+            font-size: 11px
+    &__list-ul a:hover
+        color: #e94e38
+    &__list-ul a:after
+        background-color: #e94e38
+        display: block
+        content: ""
+        height: 2px
+        width: 0%
+        left: 50%
+        position: relative
+        transition: width .3s ease-in-out
+        transform: translateX(-50%)
+    &__list-ul a:hover:after,
+    &__list-ul a:focus:after 
+        width: 100%
+    &__search
+        margin-left: 22px
+        @media screen and (max-width: 360px)
+            margin-left: 20px
+        @media screen and (max-width: 320px)
+            margin-left: 5px
+    &__search button
+        padding: 25px 25px 23px 25px
+        background: #e5e5e5
+        border: none
+        cursor: pointer
+        transition: .3s ease-out
+        @media screen and (max-width: 1024px)
+            padding: 24px 25px
+        @media screen and (max-width: 768px)
+            padding: 17px
+        @media screen and (max-width: 414px)
+            padding: 24px
+            margin-left: 20px
+        @media screen and (max-width: 414px)
+            margin-left: 10px
+        @media screen and (max-width: 360px)
+            padding: 20px
+            border-radius: 50%
+        @media screen and (max-width: 320px)
+            padding-right: 20px
+    &__search button:hover
+        background: #a4a4a4
+    &__login
+    &__login button
+        display: flex
+        padding: 29px 3000px 29px 30px
+        background: #e94e38
+        border: none
+        cursor: pointer
+        color: #fff
+        text-transform: uppercase
+        font-size: 13px
+        font-weight: 500
+        transition: .3s ease-out
+        @media screen and (min-width: 1824px)
+            font-size: 15px
+        @media screen and (max-width: 1366px)
+            padding: 29px 250px 29px 30px
+        @media screen and (max-width: 1024px)
+            padding: 29px 110px 29px 30px
+        @media screen and (max-width: 768px)
+            padding: 22px 10px 22px 10px
+            font-size: 11px
+            align-items: center
+        @media screen and (max-width: 768px)
+            display: none
+            
+    &__login button:hover
+        background: #50c31e
+.login
+    margin-right: 10px
+
+
+@keyframes slide-rotate-hor-top 
+  0% 
+        transform: translateY(0) rotateX(0deg)
+  100% 
+        transform: translateZ(-7px) rotateX(-27deg)
+  
+
+
+
+        
+        

@@ -1,0 +1,257 @@
+.footer-main
+    background: url(../img/footer.jpg) no-repeat
+    background-size: cover
+    background-position: 50% 50%
+    min-height: 500px
+    padding-bottom: 60px
+    position: fixed
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 100
+.wrapper
+    background: #fff
+    position: relative
+    z-index: 202
+    box-shadow: 0 0 10px rgba(#000, .7)
+body 
+    padding-bottom: 559px
+.footer
+    & h2 
+        color: #fff
+        font-size: 24px
+        font-weight: 500
+        text-align: center
+        padding-top: 65px
+        animation: heartbeat 1.8s ease-in-out infinite both
+        @media screen and (min-width: 1824px)
+            font-size: 30px
+        @media screen and (max-width: 375px)
+            font-size: 20px
+    & input 
+        padding: 20px 200px 20px 71px
+        border-radius: 30px
+        border: 2px rgba(255,255,255, 0.1) solid
+        background: url(../img/mail-icon.png) no-repeat 7% 50% rgba(255,255,255, 0.1)
+        color: #fff
+        outline: none
+        @media screen and (min-width: 1824px)
+            font-size: 20px
+        @media screen and (max-width: 414px)
+            padding: 15px 70px 15px 71px
+        @media screen and (max-width: 375px)
+            padding: 15px 50px 15px 61px
+        @media screen and (max-width: 320px)
+            padding: 15px 40px 15px 61px
+            font-size: 14px
+
+
+
+    &__email
+        text-align: center
+        padding-top: 50px
+        position: relative
+    &__email button 
+        padding: 17px 25px 17px 25px
+        border-radius: 30px
+        border: none
+        border-bottom: 2px #c1412e solid
+        background: #e94e38
+        color: #fff
+        text-transform: uppercase
+        font-size: 14px
+        font-weight: 500
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1)
+        cursor: pointer
+        position: absolute
+        right: 245px
+        top: 55px
+        transition: .2s ease-out
+        @media screen and (min-width: 1824px)
+            font-size: 19px
+            right: 217px
+        @media screen and (max-width: 768px)
+            right: 139px
+        @media screen and (max-width: 414px)
+            right: 25px
+            padding: 12px 14px
+        @media screen and (max-width: 360px)
+            right: 15px
+        @media screen and (max-width: 320px)
+            padding: 12px 16px
+            font-size: 12px
+            top: 56px
+
+    &__email button:hover
+        background: #c64432
+        box-shadow: inset 2px 6px 11px -6px rgba(0,0,0,0.9)
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1)
+    &__email button:active
+        transform: translateY(2px) 
+    & hr 
+        margin-top: 60px
+        color: #5e5b54
+        opacity: .4
+        @media screen and (max-width: 768px)
+            max-width: 650px
+            margin-left: 7%
+        @media screen and (max-width: 414px)
+            max-width: 350px
+            margin-left: 5%
+            margin-bottom: 20px
+            margin-top: 40px
+        @media screen and (max-width: 320px)
+            max-width: 250px
+            margin-left: 10%
+    &__a-main 
+        padding-bottom: 25px
+        @media screen and (max-width: 414px)
+            padding-bottom: 20px
+    &__a-main a:before 
+        content: ''
+        width: 99%
+        position: absolute
+        left: 1px
+        bottom: 0
+        border-bottom: 1px #fff solid
+        opacity: .3
+    &__a-main a
+        color: #fff
+        font-weight: 500
+        text-decoration: none
+        position: relative
+        transition: .3s ease-out
+        @media screen and (min-width: 1824px)
+            font-size: 20px
+    &__a-main a:hover 
+        color: #e94e38
+    &__deep-blocks
+        display: flex
+        max-width: 880px
+        justify-content: space-between
+        @media screen and (max-width: 1024px)
+            padding-left: 50px
+        @media screen and (max-width: 768px)
+            padding-left: 60px
+            padding-right: 60px
+        @media screen and (max-width: 414px)
+            padding-left: 20px
+            padding-right: 20px
+            flex-direction: column
+    &__descr-blocks
+        display: flex
+    &__descr1 
+        padding-top: 50px
+        padding-right: 190px;
+        @media screen and (min-width: 1824px)
+            font-size: 17px
+        @media screen and (max-width: 768px)
+            padding-right: 20px
+            padding-left: 20px
+        @media screen and (max-width: 414px)
+            padding-right: 25px
+            padding-left: 40px
+            font-size: 14px
+            padding-top: 20px
+        @media screen and (max-width: 360px)
+            padding-right: 15px
+        @media screen and (max-width: 320px)
+            padding-right: 0
+            padding-left: 28px
+    &__descr1 li
+        list-style: none
+        line-height: 1.8em 
+    &__descr1 li a:hover
+        color: #e94e38
+    &__descr1 li a 
+        color: #c0bebc
+        text-decoration: none
+        transition: .3s ease-out
+    &__social
+        padding-top: 50px
+        padding-right: 20px
+        @media screen and (max-width: 414px)
+            display: flex
+            justify-content: center
+            padding-top: 30px
+        @media screen and (max-width: 375px)
+            padding-right: 0
+    &__social a
+        color: #fff
+        text-decoration: none
+        position: relative
+        @media screen and (min-width: 1824px)
+            font-size: 20px
+        @media screen and (max-width: 414px)
+            left: 0
+            bottom: 40px
+            padding-top: 30px
+    &__social-icons
+        display: flex
+        align-items: center
+        min-width: 165px
+        justify-content: space-between
+        padding-top: 30px
+        @media screen and (max-width: 414px)
+            position: absolute
+    &__social-icons img
+        transition: .2s ease-out
+    &__social-icons img:hover
+        transform: scale(0.9)
+    &__copyright
+        color: #fff
+        font-size: 14px
+        position: absolute
+        right: 240px
+        bottom: 67px
+        @media screen and (min-width: 1824px)
+            right: 630px
+        @media screen and (max-width: 1024px)
+            right: 150px
+        @media screen and (max-width: 768px)
+            right: 75px
+        @media screen and (max-width: 414px)
+            position: absolute
+            bottom: 20px
+            right: 95px
+        @media screen and (max-width: 375px)
+            right: 74px
+        @media screen and (max-width: 320px)
+            right: 50px
+.follow:before 
+    content: ''
+    width: 99%
+    position: absolute
+    left: 1px
+    bottom: 0
+    border-bottom: 1px #fff solid
+    opacity: .3
+
+
+
+@keyframes heartbeat 
+  from 
+            transform: scale(1)
+            transform-origin: center center
+            animation-timing-function: ease-out
+  
+  10% 
+            transform: scale(0.95)
+            animation-timing-function: ease-in
+  
+  17% 
+            transform: scale(0.98)
+            animation-timing-function: ease-out
+  
+  33% 
+            transform: scale(0.94)
+            animation-timing-function: ease-in
+  
+  45% 
+            transform: scale(1)
+            animation-timing-function: ease-out
+
+  
+
+
+

@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet"> 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="./js/animatescroll.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Duhhot</title>
+</head>
+<body>
+    <div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <nav>
+                    <div class="hamburger">
+                      <div class="line1"></div>
+                      <div class="line2"></div>
+                      <div class="line3"></div>
+                    </div>
+                    <ul class="nav-links">
+                      <li ><a href="#">Reality</a></li>
+                      <li ><a href="#">Living</a></li>
+                      <li ><a href="#">Education</a></li>
+                      <li ><a href="#">Entertainment</a></li>
+                      <li><a href="#">Mobility</a></li>
+                      <li class="navbar__list-ul_none">
+                            <img src="./img/login.png" alt="login">
+                            <a href="#">Login</a>
+                        </li>
+                    </ul>
+                  </nav>
+                    <div class="navbar__logo">
+                       <a href="#"> <img data-aos="fade-right" data-aos-delay="800" src="./img/logo.png" alt="duhoot logo"></a>
+                    </div>
+                    <div class="navbar__list">
+                        <ul class="navbar__list-ul">
+                            <li data-aos="fade-down" data-aos-delay="500">
+                                <a onclick="$('#reality').animatescroll({scrollSpeed:2800,easing:'easeOutBack'});" href="#">Reality</a>
+                            </li>
+                            <li data-aos="fade-down" data-aos-delay="600">
+                                <a onclick="$('#reality').animatescroll({scrollSpeed:2800,easing:'easeOutBack'});" href="#">Living</a>
+                            </li>
+                            <li data-aos="fade-down" data-aos-delay="700">
+                                <a onclick="$('#reality').animatescroll({scrollSpeed:2800,easing:'easeOutBack'});" href="#">Education</a>
+                            </li>
+                            <li data-aos="fade-down" data-aos-delay="800"> 
+                                <a onclick="$('#reality').animatescroll({scrollSpeed:2800,easing:'easeOutBack'});" href="#">Entertainment</a>
+                            </li>
+                            <li data-aos="fade-down" data-aos-delay="900">
+                                <a onclick="$('#reality').animatescroll({scrollSpeed:2800,easing:'easeOutBack'});" href="#">Mobility</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar__search">
+                        <button>
+                            <img data-aos="fade-up" data-aos-delay="800" src="./img/loop.png" alt="loop search">
+                        </button>
+                    </div>
+                    <div class="navbar__login">
+                        <button>
+                            <img data-aos="fade-down" data-aos-delay="900" class="login" src="./img/login.png" alt="">
+                            Login
+                        </button>
+                    </div>
+                </div>
+        </div>
+        <div class="hero">
+            <div class="container">
+                <div class="hero__title">
+                    <h1 data-aos="fade-down" data-aos-delay="1100">
+                        What are you looking for?
+                    </h1>
+                    <div class="hero__title-select">
+                        <select data-aos="fade-right" data-aos-delay="1200" name="countries">
+                            <option value="dubai" selected>Dubai</option>
+                            <option value="abu dhabi">Abu Dhabi</option>
+                            <option value="doha">Doha</option>
+                        </select>
+                        <select data-aos="fade-left" data-aos-delay="1400" name="education">
+                            <option value="education" selected>Education</option>
+                            <option value="travel">Travel</option>
+                            <option value="work">Work</option>
+                        </select>
+                    </div>
+                    <div class="hero__title-input">
+                        <input data-aos="fade-down" data-aos-delay="1500" type="text" placeholder="Keyword, name, date, ...">
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="1600" class="hero__title_btn-search">
+                        <button>
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="filter-main">
+        <h2 class="valid">valid</h2>
+        <div class="container">
+            <div class="filter">
+                <div class="filter__list">
+                    <ul class="filter__list-ul">
+                        <li data-aos="fade-right" data-aos-delay="1500">
+                            <a href="#">Recommended</a>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="1600">
+                            <a href="#">Latest</a>
+                        </li>
+                        <li data-aos="fade-left" data-aos-delay="1700">
+                            <a href="#">Highlights</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter__selects">
+                    <select data-aos="fade-right" data-aos-delay="1800" name="countries">
+                        <option value="dubai" selected>Dubai</option>
+                        <option value="abu dhabi">Abu Dhabi</option>
+                        <option value="doha">Doha</option>
+                    </select>
+                    <div data-aos="fade-left" data-aos-delay="1800" class="filter__selects-btn">
+                        <button>Show map</button>
+                    </div>
+                </div>
+                <div class="filter__filter-list">
+                    <span data-aos="fade-right" data-aos-delay="1600">Filter:</span>
+                    <a href="">
+                        <img data-aos="fade-down" data-aos-delay="1650" src="./img/icon1.png" alt="icon">
+                    </a>
+                    <a href="">
+                        <img data-aos="fade-up" data-aos-delay="1700" src="./img/icon2.png" alt="icon">
+                    </a>
+                    <a href="">
+                        <img data-aos="fade-down" data-aos-delay="1750" src="./img/icon3.png" alt="icon">
+                    </a>
+                    <a href="">
+                        <img data-aos="fade-up" data-aos-delay="1800" src="./img/icon4.png" alt="icon">
+                    </a>
+                    <a href="">
+                        <img data-aos="fade-down" data-aos-delay="1850" src="./img/icon5.png" alt="icon">
+                    </a>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section class="posts-main">
+            <h2 class="valid">valid</h2>
+        <div class="container">
+            <div class="posts">
+                <div data-aos="zoom-out" data-aos-delay="500" data-aos-offset="70" class="posts__block1">
+                    <div class="posts__descr-hover">
+                        <div class="posts__descr-content">
+                            <button>Show more</button>
+                            <div class="rating">
+                                    <div class="rating-item active" data-rate="1"></div>
+                                    <div class="rating-item active" data-rate="2"></div>
+                                    <div class="rating-item active" data-rate="3"></div>
+                                    <div class="rating-item active current-active" data-rate="4"></div>
+                                    <div class="rating-item" data-rate="5"></div>
+                                    <img src="./img/chat-more.png" alt="chat">
+                            </div>
+                        </div>
+                    </div>
+                    <img class="posts__block1-img" src="./img/post1.jpg" alt="post">
+                        <span class="posts__block1-price">
+                            $2,990
+                        </span>
+                    <img class="posts__block1-icon" src="./img/big-icon1.png" alt="icon">
+                    <div class="posts__block1-text">
+                        <p class="posts__block1-p1">2 bedroom house for rent in Dubai</p>
+                        <p class="posts__block1-p2">Vision Agency</p>
+                    </div>
+                    <div class="rating">
+                            <div class="rating-item active" data-rate="1"></div>
+                            <div class="rating-item active" data-rate="2"></div>
+                            <div class="rating-item active" data-rate="3"></div>
+                            <div class="rating-item active current-active" data-rate="4"></div>
+                            <div class="rating-item" data-rate="5"></div>
+                            <span>(365)</span>
+                    </div>
+                </div>
+
+                <div data-aos="zoom-out" data-aos-delay="550" data-aos-offset="70" class="posts__block1">
+                        <div class="posts__descr-hover">
+                                <div class="posts__descr-content">
+                                    <button>Show more</button>
+                                    <div class="rating">
+                                            <div class="rating-item active" data-rate="1"></div>
+                                            <div class="rating-item active" data-rate="2"></div>
+                                            <div class="rating-item active" data-rate="3"></div>
+                                            <div class="rating-item active current-active" data-rate="4"></div>
+                                            <div class="rating-item" data-rate="5"></div>
+                                            <img src="./img/chat-more.png" alt="chat">
+                                    </div>
+                                </div>
+                            </div>
+                    <img class="posts__block1-img2" src="./img/post2.jpg" alt="post">
+                    <img class="posts__block1-icon" src="./img/big-icon2.png" alt="icon">
+                    <div class="posts__block1-text">
+                        <p class="posts__block1-p1">Beach party festival 2014</p>
+                        <p class="posts__block1-p2-2">Long beach</p>
+                    </div>
+                    <div class="rating">
+                            <div class="rating-item active" data-rate="1"></div>
+                            <div class="rating-item active" data-rate="2"></div>
+                            <div class="rating-item active" data-rate="3"></div>
+                            <div class="rating-item active" data-rate="4"></div>
+                            <div class="rating-item current-active" data-rate="5"></div>
+                            <span>(1165)</span>
+                    </div>
+                </div>
+
+                
+                <div data-aos="zoom-out" data-aos-delay="600" data-aos-offset="70" class="posts__block1">
+                        <div class="posts__descr-hover">
+                                <div class="posts__descr-content">
+                                    <button>Show more</button>
+                                    <div class="rating">
+                                            <div class="rating-item active" data-rate="1"></div>
+                                            <div class="rating-item active" data-rate="2"></div>
+                                            <div class="rating-item active" data-rate="3"></div>
+                                            <div class="rating-item active current-active" data-rate="4"></div>
+                                            <div class="rating-item" data-rate="5"></div>
+                                            <img src="./img/chat-more.png" alt="chat">
+                                    </div>
+                                </div>
+                            </div>
+                    <img class="posts__block1-img3" src="./img/post4.jpg" alt="post">
+                    <img class="posts__block1-icon" src="./img/big-icon3.png" alt="icon">
+                    <div class="posts__block1-text">
+                        <p class="posts__block1-p1">Aliquam quis pulvinar purus</p>
+                        <p class="posts__block1-p2-3">Bus trans</p>
+                    </div>
+                    <div class="rating">
+                            <div class="rating-item active" data-rate="1"></div>
+                            <div class="rating-item active" data-rate="2"></div>
+                            <div class="rating-item active" data-rate="3"></div>
+                            <div class="rating-item active current-active" data-rate="4"></div>
+                            <div class="rating-item" data-rate="5"></div>
+                            <span>(365)</span>
+                    </div>
+                </div>
+
+                <div data-aos="zoom-out" data-aos-delay="650" data-aos-offset="70" class="posts__block1">
+                        <div class="posts__descr-hover">
+                                <div class="posts__descr-content">
+                                    <button>Show more</button>
+                                    <div class="rating">
+                                            <div class="rating-item active" data-rate="1"></div>
+                                            <div class="rating-item active" data-rate="2"></div>
+                                            <div class="rating-item active" data-rate="3"></div>
+                                            <div class="rating-item active current-active" data-rate="4"></div>
+                                            <div class="rating-item" data-rate="5"></div>
+                                            <img src="./img/chat-more.png" alt="chat">
+                                    </div>
+                                </div>
+                            </div>
+                    <img class="posts__block1-img" src="./img/post1.jpg" alt="post">
+                        <span class="posts__block1-price">
+                            $2,990
+                        </span>
+                    <img class="posts__block1-icon" src="./img/big-icon1.png" alt="icon">
+                    <div class="posts__block1-text">
+                        <p class="posts__block1-p1">2 bedroom house for rent in Dubai</p>
+                        <p class="posts__block1-p2">Reality Agency</p>
+                    </div>
+                    <div class="rating">
+                            <div class="rating-item active" data-rate="1"></div>
+                            <div class="rating-item active" data-rate="2"></div>
+                            <div class="rating-item active" data-rate="3"></div>
+                            <div class="rating-item active current-active" data-rate="4"></div>
+                            <div class="rating-item" data-rate="5"></div>
+                            <span>(165)</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="big-posts">
+                <div data-aos="zoom-out" data-aos-delay="650" data-aos-offset="70" class="big-posts__block2">
+                        <div class="big-posts__descr-hover">
+                                <div class="big-posts__descr-content">
+                                    <button>Show more</button>
+                                    <div class="rating">
+                                            <div class="rating-item active" data-rate="1"></div>
+                                            <div class="rating-item active" data-rate="2"></div>
+                                            <div class="rating-item active" data-rate="3"></div>
+                                            <div class="rating-item active current-active" data-rate="4"></div>
+                                            <div class="rating-item" data-rate="5"></div>
+                                            <img src="./img/chat-more.png" alt="chat">
+                                    </div>
+                                </div>
+                            </div>
+                    <img class="big-posts__block2-img" src="./img/big-post1.jpg" alt="post">
+                    <div class="big-posts__block2-stars-mini">
+                        <p>Vision Agency</p>
+                        <div class="rating">
+                                <div class="rating-item active" data-rate="1"></div>
+                                <div class="rating-item active" data-rate="2"></div>
+                                <div class="rating-item active" data-rate="3"></div>
+                                <div class="rating-item current-active active" data-rate="4"></div>
+                                <div class="rating-item" data-rate="5"></div>
+                                <span>(365)</span>
+                        </div>
+                    </div>
+                    <span class="big-posts__block2-l">
+                        l
+                    </span>
+                    <img class="big-posts__block2-icon" src="./img/big-icon1.png" alt="icon">
+                    <div class="big-posts__block2-stars">
+                        <div class="rating">
+                                <div class="rating-item active" data-rate="1"></div>
+                                <div class="rating-item active" data-rate="2"></div>
+                                <div class="rating-item active" data-rate="3"></div>
+                                <div class="rating-item current-active active" data-rate="4"></div>
+                                <div class="rating-item" data-rate="5"></div>
+                        </div>
+                    </div>
+                    <div class="big-posts__block2-content">
+                        <div class="big-posts__block2-user">
+                            <img class="big-posts__block2-user-icon" src="./img/user-icon1.png" alt="user">
+                        </div>
+                        <div class="big-posts__block2-text">
+                            <p class="big-posts__block2-p1">Lucy-P</p>
+                            <p class="big-posts__block2-p2">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucbus, quis posuere orci ornare. Duis mattis saggitis ftingilla" <a href="#">...read more</a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div data-aos="zoom-out" data-aos-delay="700" data-aos-offset="70" class="big-posts__block2">
+                        <div class="big-posts__descr-hover">
+                                <div class="big-posts__descr-content">
+                                    <button>Show more</button>
+                                    <div class="rating">
+                                            <div class="rating-item active" data-rate="1"></div>
+                                            <div class="rating-item active" data-rate="2"></div>
+                                            <div class="rating-item active" data-rate="3"></div>
+                                            <div class="rating-item active current-active" data-rate="4"></div>
+                                            <div class="rating-item" data-rate="5"></div>
+                                            <img src="./img/chat-more.png" alt="chat">
+                                    </div>
+                                </div>
+                            </div>
+                    <img class="big-posts__block2-img2" src="./img/big-post2.jpg" alt="post">
+                    <div class="big-posts__block2-stars-mini">
+                            <p>Skybox club</p>
+                            <div class="rating">
+                                    <div class="rating-item active" data-rate="1"></div>
+                                    <div class="rating-item active" data-rate="2"></div>
+                                    <div class="rating-item active" data-rate="3"></div>
+                                    <div class="rating-item current-active active" data-rate="4"></div>
+                                    <div class="rating-item" data-rate="5"></div>
+                                    <span>(1365)</span>
+                            </div>
+                        </div>
+                    <span class="big-posts__block2-l">
+                        l
+                    </span>
+                    <img class="big-posts__block2-icon" src="./img/big-icon4.png" alt="icon">
+                    <div class="big-posts__block2-stars">
+                        <div class="rating">
+                                <div class="rating-item active" data-rate="1"></div>
+                                <div class="rating-item active" data-rate="2"></div>
+                                <div class="rating-item active" data-rate="3"></div>
+                                <div class="rating-item current-active active" data-rate="4"></div>
+                                <div class="rating-item" data-rate="5"></div>
+                        </div>
+                    </div>
+                    <div class="big-posts__block2-content">
+                        <div class="big-posts__block2-user">
+                            <img class="big-posts__block2-user-icon" src="./img/user-icon2.png" alt="user">
+                        </div>
+                        <div class="big-posts__block2-text">
+                            <p class="big-posts__block2-p1">Peter145</p>
+                            <p class="big-posts__block2-p2">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucbus, quis posuere orci ornare. Duis mattis saggitis ftingilla" <a href="#">...read more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="posts">
+                    <div data-aos="zoom-out" data-aos-delay="750" data-aos-offset="70" class="posts__block1">
+                            <div class="posts__descr-hover">
+                                    <div class="posts__descr-content">
+                                        <button>Show more</button>
+                                        <div class="rating">
+                                                <div class="rating-item active" data-rate="1"></div>
+                                                <div class="rating-item active" data-rate="2"></div>
+                                                <div class="rating-item active" data-rate="3"></div>
+                                                <div class="rating-item active current-active" data-rate="4"></div>
+                                                <div class="rating-item" data-rate="5"></div>
+                                                <img src="./img/chat-more.png" alt="chat">
+                                        </div>
+                                    </div>
+                                </div>
+                        <img class="posts__block1-img" src="./img/post1.jpg" alt="post">
+                            <span class="posts__block1-price">
+                                $2,990
+                            </span>
+                        <img class="posts__block1-icon" src="./img/big-icon1.png" alt="icon">
+                        <div class="posts__block1-text">
+                            <p class="posts__block1-p1">2 bedroom house for rent in Dubai</p>
+                            <p class="posts__block1-p2">Vision Agency</p>
+                        </div>
+                        <div class="rating">
+                                <div class="rating-item active" data-rate="1"></div>
+                                <div class="rating-item active" data-rate="2"></div>
+                                <div class="rating-item active" data-rate="3"></div>
+                                <div class="rating-item active current-active" data-rate="4"></div>
+                                <div class="rating-item" data-rate="5"></div>
+                                <span>(365)</span>
+                        </div>
+                    </div>
+    
+                    <div data-aos="zoom-out" data-aos-delay="800" data-aos-offset="70" class="posts__block1">
+                            <div class="posts__descr-hover">
+                                    <div class="posts__descr-content">
+                                        <button>Show more</button>
+                                        <div class="rating">
+                                                <div class="rating-item active" data-rate="1"></div>
+                                                <div class="rating-item active" data-rate="2"></div>
+                                                <div class="rating-item active" data-rate="3"></div>
+                                                <div class="rating-item active current-active" data-rate="4"></div>
+                                                <div class="rating-item" data-rate="5"></div>
+                                                <img src="./img/chat-more.png" alt="chat">
+                                        </div>
+                                    </div>
+                                </div>
+                        <img class="posts__block1-img2" src="./img/post2.jpg" alt="post">
+                        <img class="posts__block1-icon" src="./img/big-icon2.png" alt="icon">
+                        <div class="posts__block1-text">
+                            <p class="posts__block1-p1">Beach party festival 2014</p>
+                            <p class="posts__block1-p2-2">Long beach</p>
+                        </div>
+                        <div class="rating">
+                                <div class="rating-item active" data-rate="1"></div>
+                                <div class="rating-item active" data-rate="2"></div>
+                                <div class="rating-item active" data-rate="3"></div>
+                                <div class="rating-item active" data-rate="4"></div>
+                                <div class="rating-item current-active" data-rate="5"></div>
+                                <span>(1165)</span>
+                        </div>
+                    </div>
+    
+                    <div data-aos="zoom-out" data-aos-delay="850" data-aos-offset="70" class="posts__block1">
+                            <div class="posts__descr-hover">
+                                    <div class="posts__descr-content">
+                                        <button>Show more</button>
+                                        <div class="rating">
+                                                <div class="rating-item active" data-rate="1"></div>
+                                                <div class="rating-item active" data-rate="2"></div>
+                                                <div class="rating-item active" data-rate="3"></div>
+                                                <div class="rating-item active current-active" data-rate="4"></div>
+                                                <div class="rating-item" data-rate="5"></div>
+                                                <img src="./img/chat-more.png" alt="chat">
+                                        </div>
+                                    </div>
+                                </div>
+                        <img class="posts__block1-img3" src="./img/post4.jpg" alt="post">
+                        <img class="posts__block1-icon" src="./img/big-icon3.png" alt="icon">
+                        <div class="posts__block1-text">
+                            <p class="posts__block1-p1">Aliquam quis pulvinar purus</p>
+                            <p class="posts__block1-p2-3">Bus trans</p>
+                        </div>
+                        <div class="rating">
+                                <div class="rating-item active" data-rate="1"></div>
+                                <div class="rating-item active" data-rate="2"></div>
+                                <div class="rating-item active" data-rate="3"></div>
+                                <div class="rating-item active current-active" data-rate="4"></div>
+                                <div class="rating-item" data-rate="5"></div>
+                                <span>(365)</span>
+                        </div>
+                    </div>
+    
+                    <div data-aos="zoom-out" data-aos-delay="900" data-aos-offset="70" class="posts__block1">
+                            <div class="posts__descr-hover">
+                                    <div class="posts__descr-content">
+                                        <button>Show more</button>
+                                        <div class="rating">
+                                                <div class="rating-item active" data-rate="1"></div>
+                                                <div class="rating-item active" data-rate="2"></div>
+                                                <div class="rating-item active" data-rate="3"></div>
+                                                <div class="rating-item active current-active" data-rate="4"></div>
+                                                <div class="rating-item" data-rate="5"></div>
+                                                <img src="./img/chat-more.png" alt="chat">
+                                        </div>
+                                    </div>
+                                </div>
+                        <img class="posts__block1-img" src="./img/post1.jpg" alt="post">
+                            <span class="posts__block1-price">
+                                $2,990
+                            </span>
+                        <img class="posts__block1-icon" src="./img/big-icon1.png" alt="icon">
+                        <div class="posts__block1-text">
+                            <p class="posts__block1-p1">2 bedroom house for rent in Dubai</p>
+                            <p class="posts__block1-p2">Reality Agency</p>
+                        </div>
+                        <div class="rating">
+                                <div class="rating-item active" data-rate="1"></div>
+                                <div class="rating-item active" data-rate="2"></div>
+                                <div class="rating-item active" data-rate="3"></div>
+                                <div class="rating-item active current-active" data-rate="4"></div>
+                                <div class="rating-item" data-rate="5"></div>
+                                <span>(165)</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="posts3">
+                        <div data-aos="zoom-out" data-aos-delay="950" data-aos-offset="70" class="big-posts__block2">
+                                <div class="big-posts__descr-hover">
+                                        <div class="big-posts__descr-content">
+                                            <button>Show more</button>
+                                            <div class="rating">
+                                                    <div class="rating-item active" data-rate="1"></div>
+                                                    <div class="rating-item active" data-rate="2"></div>
+                                                    <div class="rating-item active" data-rate="3"></div>
+                                                    <div class="rating-item active current-active" data-rate="4"></div>
+                                                    <div class="rating-item" data-rate="5"></div>
+                                                    <img src="./img/chat-more.png" alt="chat">
+                                            </div>
+                                        </div>
+                                    </div>
+                                <img class="big-posts__block2-img2" src="./img/big-post2.jpg" alt="post">
+                                <div class="big-posts__block2-stars-mini">
+                                        <p>Skybox club</p>
+                                        <div class="rating">
+                                                <div class="rating-item active" data-rate="1"></div>
+                                                <div class="rating-item active" data-rate="2"></div>
+                                                <div class="rating-item active" data-rate="3"></div>
+                                                <div class="rating-item current-active active" data-rate="4"></div>
+                                                <div class="rating-item" data-rate="5"></div>
+                                                <span>(1365)</span>
+                                        </div>
+                                    </div>
+                                <span class="big-posts__block2-l">
+                                    l
+                                </span>
+                                <img class="big-posts__block2-icon" src="./img/big-icon4.png" alt="icon">
+                                <div class="big-posts__block2-stars">
+                                    <div class="rating">
+                                            <div class="rating-item active" data-rate="1"></div>
+                                            <div class="rating-item active" data-rate="2"></div>
+                                            <div class="rating-item active" data-rate="3"></div>
+                                            <div class="rating-item current-active active" data-rate="4"></div>
+                                            <div class="rating-item" data-rate="5"></div>
+                                    </div>
+                                </div>
+                                <div class="big-posts__block2-content">
+                                    <div class="big-posts__block2-user">
+                                        <img class="big-posts__block2-user-icon" src="./img/user-icon2.png" alt="user">
+                                    </div>
+                                    <div class="big-posts__block2-text">
+                                        <p class="big-posts__block2-p1">Peter145</p>
+                                        <p class="big-posts__block2-p2">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucbus, quis posuere orci ornare. Duis mattis saggitis ftingilla" <a href="#">...read more</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        <div data-aos="zoom-out" data-aos-delay="1000" data-aos-offset="70" class="posts__block1">
+                                <div class="posts__descr-hover">
+                                        <div class="posts__descr-content">
+                                            <button>Show more</button>
+                                            <div class="rating">
+                                                    <div class="rating-item active" data-rate="1"></div>
+                                                    <div class="rating-item active" data-rate="2"></div>
+                                                    <div class="rating-item active" data-rate="3"></div>
+                                                    <div class="rating-item active current-active" data-rate="4"></div>
+                                                    <div class="rating-item" data-rate="5"></div>
+                                                    <img src="./img/chat-more.png" alt="chat">
+                                            </div>
+                                        </div>
+                                    </div>
+                                <img class="posts__block1-img" src="./img/post1.jpg" alt="post">
+                                    <span class="posts__block1-price">
+                                        $2,990
+                                    </span>
+                                <img class="posts__block1-icon" src="./img/big-icon1.png" alt="icon">
+                                <div class="posts__block1-text">
+                                    <p class="posts__block1-p1">2 bedroom house for rent in Dubai</p>
+                                    <p class="posts__block1-p2">Vision Agency</p>
+                                </div>
+                                <div class="rating">
+                                        <div class="rating-item active" data-rate="1"></div>
+                                        <div class="rating-item active" data-rate="2"></div>
+                                        <div class="rating-item active" data-rate="3"></div>
+                                        <div class="rating-item active current-active" data-rate="4"></div>
+                                        <div class="rating-item" data-rate="5"></div>
+                                        <span>(365)</span>
+                                </div>
+                            </div>
+            
+                            <div data-aos="zoom-out" data-aos-delay="1000" data-aos-offset="70" class="posts__block1">
+                                    <div class="posts__descr-hover">
+                                            <div class="posts__descr-content">
+                                                <button>Show more</button>
+                                                <div class="rating">
+                                                        <div class="rating-item active" data-rate="1"></div>
+                                                        <div class="rating-item active" data-rate="2"></div>
+                                                        <div class="rating-item active" data-rate="3"></div>
+                                                        <div class="rating-item active current-active" data-rate="4"></div>
+                                                        <div class="rating-item" data-rate="5"></div>
+                                                        <img src="./img/chat-more.png" alt="chat">
+                                                </div>
+                                            </div>
+                                        </div>
+                                <img class="posts__block1-img2" src="./img/post2.jpg" alt="post">
+                                <img class="posts__block1-icon" src="./img/big-icon2.png" alt="icon">
+                                <div class="posts__block1-text">
+                                    <p class="posts__block1-p1">Beach party festival 2014</p>
+                                    <p class="posts__block1-p2-2">Long beach</p>
+                                </div>
+                                <div class="rating">
+                                        <div class="rating-item active" data-rate="1"></div>
+                                        <div class="rating-item active" data-rate="2"></div>
+                                        <div class="rating-item active" data-rate="3"></div>
+                                        <div class="rating-item active" data-rate="4"></div>
+                                        <div class="rating-item current-active" data-rate="5"></div>
+                                        <span>(1165)</span>
+                                </div>
+                            </div>        
+                </div>
+                <div data-aos="fade-down" data-aos-delay="1000" data-aos-offset="100" class="posts__load-more">
+                    <h4><a href="">Load more</a></h4>
+                </div>
+                <hr>
+        </div>
+    </section>
+
+
+    <section class="offer-main" id="reality">
+            <h2 class="valid">valid</h2>
+        <div class="container">
+            <div class="offer">
+                <div data-aos="fade-up" data-aos-delay="1050" data-aos-offset="70" class="offer__text">
+                    <h2>What can DuHoot offer to you?</h2>
+                    <p>Etiam cursus ipsum quis enim faucibus</p>
+                </div>
+                <div class="offer__icons">
+                    <img data-aos="fade-right" data-aos-delay="1050" data-aos-offset="70" src="./img/offer-icon1.png" alt="offer">
+                    <hr data-aos="fade-right" data-aos-delay="1050" data-aos-offset="70">
+                    <img data-aos="fade-right" data-aos-delay="1100" data-aos-offset="70" class="offer__icon-color" src="./img/offer-icon22.png" alt="offer">
+                    <hr data-aos="fade-right" data-aos-delay="1100" data-aos-offset="70">
+                    <img data-aos="fade-right" data-aos-delay="1150" data-aos-offset="70" class="offer__icon-color" src="./img/offer-icon33.png" alt="offer">
+                    <hr data-aos="fade-right" data-aos-delay="1150" data-aos-offset="70">
+                    <img data-aos="fade-right" data-aos-delay="1200" data-aos-offset="70" class="offer__icon-color" src="./img/offer-icon44.png" alt="offer">
+                    <hr data-aos="fade-right" data-aos-delay="1200" data-aos-offset="70">
+                    <img data-aos="fade-right" data-aos-delay="1250" data-aos-offset="70" class="offer__icon-color" src="./img/offer-icon55.png" alt="offer">
+                </div>
+                <h3 data-aos="zoom-out" data-aos-delay="1250" data-aos-offset="70">Reality</h3>
+                <div class="offer__reality">
+                    <div class="offer__reality-img">
+                        <img data-aos="fade-right" data-aos-delay="1250" data-aos-offset="70" src="./img/offer-icon6.png" alt="reality">
+                    </div>
+                    <div class="offer__reality-text">
+                        <p data-aos="fade-right" data-aos-delay="1250" data-aos-offset="70">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                    </div>
+                    <div class="offer__reality-img">
+                        <img data-aos="fade-left" data-aos-delay="1250" data-aos-offset="70" src="./img/offer-icon7.png" alt="reality">
+                    </div>
+                    <div class="offer__reality-text">
+                        <p data-aos="fade-left" data-aos-delay="1250" data-aos-offset="70">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+    <footer class="footer-main">
+            <h2 class="valid">valid</h2>
+        <div class="container">
+            <div class="footer">
+                <div class="footer__text">
+                    <h2>Subscribe to our newsletter</h2>
+                </div>
+                <div class="footer__email">
+                    <input type="email" placeholder="your@email.com">
+                    <button>Subscribe</button>
+                </div>
+                <hr>
+                <div class="footer__deep-blocks">
+                    <div class="footer__descr-blocks">
+                        <div class="footer__descr1">
+                            <div class="footer__a-main">
+                                <a href="#">Ipsum quis</a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">Aliquam quis</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pulvinar purus</a>
+                                </li>
+                                <li>
+                                    <a href="#">Etiam cursus</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ipsum quis</a>
+                                </li>
+                                <li>
+                                    <a href="#">Enim faucibus</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__descr1">
+                                <div class="footer__a-main">
+                                    <a href="">Ipsum quis</a>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">Aliquam quis</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pulvinar purus</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Etiam cursus</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ipsum quis</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Enim faucibus</a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="footer__social">
+                        <a class="follow" href="#">Follow us</a>
+                        <div class="footer__social-icons">
+                           <a href=""><img src="./img/facebook.png" alt="facebook"></a>
+                           <a href=""><img src="./img/twitter.png" alt="twitter"></a>
+                           <a href=""><img src="./img/google+.png" alt="google+"></a>
+                           <a href=""><img src="./img/youtube.png" alt="youtube"></a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="footer__copyright">
+                        Copyright &copy; All Rights reserved
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/scroll.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/toggle.js"></script>
+    <script>
+            AOS.init();
+    </script>
+</body>
+</html>

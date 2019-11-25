@@ -1,0 +1,114 @@
+.filter-main
+    border-bottom: 2px rgba(0,0,0,0.1) solid
+.filter
+    min-height: 75px
+    display: flex
+    align-items: center
+    z-index: 1111
+    @media screen and (max-width: 414px)
+        min-height: 120px
+        flex-direction: column
+        padding-top: 20px
+        padding-bottom: 20px
+    &__list-ul
+        display: flex
+        list-style: none
+        justify-content: space-between
+        min-width: 270px
+        @media screen and (min-width: 1824px)
+            min-width: 340px
+        @media screen and (max-width: 768px)
+            flex-direction: column
+            padding-left: 20px
+            line-height: 1.2em
+            align-items: center
+            justify-content: flex-start
+            min-width: 0
+        @media screen and (max-width: 414px)
+            padding-bottom: 20px
+    &__list-ul a
+        text-decoration: none
+        color: #96a6a7
+        text-transform: uppercase
+        font-size: 12px
+        font-weight: 500
+        transition: .3s ease-out
+        @media screen and (min-width: 1824px)
+            font-size: 15px
+    &__list-ul a:hover, &__list-ul a:active
+        color: #e94e38
+    &__selects
+        display: flex
+        min-width: 255px
+        justify-content: space-between
+        margin-left: 100px
+        @media screen and (min-width: 1824px)
+            margin-left: 50px
+        @media screen and (max-width: 768px)
+            margin-left: 30px
+        @media screen and (max-width: 414px)
+            padding-bottom: 20px
+        @media screen and (max-width: 375px)
+            margin-left: 0
+    &__selects select
+        display: block
+        border-radius: 30px
+        border: 1px #cad2d3 solid
+        padding: 12px 28px 12px 12px
+        background: url(../img/mini-arrow-down.png) no-repeat 85% 50%
+        appearance: none!important
+        color: #e94e38
+        outline: none
+        cursor: pointer
+        font-size: 12px
+        text-transform: uppercase
+        font-weight: 600
+        transition: .1s linear
+    &__selects select option
+        color: #000
+    &__selects button
+        display: block
+        border-radius: 30px
+        border: 1px #cad2d3 solid
+        padding: 12px 35px 12px 15px
+        background: url(../img/location.png) no-repeat 85% 46%
+        outline: none
+        cursor: pointer
+        font-size: 12px
+        text-transform: uppercase
+        font-weight: 600
+        color: #96a6a7
+        transition: .3s ease-out
+    &__selects button:hover
+        color: #fff
+        background: url(../img/location2.png) no-repeat 85% 46% #1baf5d
+    &__filter-list
+        display: flex
+        align-items: center
+        min-width: 300px
+        justify-content: space-between
+        margin-left: 45px
+        color: #96a6a7
+        text-transform: uppercase
+        font-size: 12px
+        font-weight: 600
+        letter-spacing: .4px
+        @media screen and (max-width: 768px)
+            margin-left: 25px
+        @media screen and (max-width: 414px)
+            margin-left: 0
+    &__filter-list a:hover
+        animation: bounce 1s
+
+@keyframes bounce 
+  0%, 20%, 60%, 100% 
+    -webkit-transform: translateY(0)
+    transform: translateY(0)
+  
+  40% 
+    -webkit-transform: translateY(-8px)
+    transform: translateY(-8px)
+  
+  80% 
+    -webkit-transform: translateY(-4px)
+    transform: translateY(-4px)

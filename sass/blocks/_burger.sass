@@ -1,0 +1,91 @@
+
+@keyframes navLinkFade 
+    from 
+        opacity: 0
+        transform: translateY(50px)
+    to 
+        opacity: 1
+        transform: translateY(0px)
+
+nav 
+  height: 10vh
+  background: #5b78c7
+  display: none
+
+
+.nav-links 
+  display: flex
+  list-style: none
+  width: 50%
+  height: 100%
+  justify-content: center
+  align-items: center
+  margin-left: auto
+  z-index: 333
+
+.nav-links li
+   padding-bottom: 56px
+
+.nav-links li a 
+  color: white
+  text-decoration: none
+  font-size: 16px
+
+@media screen and (max-width: 414px) 
+    .navbar__list-ul
+        display: none
+
+@media screen and (max-width: 414px) 
+  .line1, .line2, .line3
+    width: 30px
+    height: 3px
+    background: #000
+    margin: 5px
+    position: relative
+    transition: all 0.3s ease-out
+    border-radius: 15px
+  
+  nav 
+    position: relative
+    display: block
+  
+
+  .hamburger 
+    position: absolute
+    cursor: pointer
+    top: 50%
+    transform: translate(-5%, -50%)
+    left: 26px
+    z-index: 334
+  
+
+  .nav-links 
+    position: fixed
+    background: #e94e38
+    height: 100vh
+    width: 100%
+    flex-direction: column
+    clip-path: circle(10px at 5% -12%)
+    transition: all 1s ease-out
+    pointer-events: none
+    bottom: 10px
+    
+  
+  .nav-links.open 
+    clip-path: circle(1000px at 5% -12%)
+    pointer-events: all
+  
+  .nav-links li 
+    opacity: 0
+  
+  .nav-links li a 
+    font-size: 20px
+
+.toggle .line1
+        transform: rotate(-45deg) 
+        top: 8px
+.toggle .line2
+        opacity: 0
+.toggle .line3
+        transform: rotate(45deg) 
+        bottom: 8px
